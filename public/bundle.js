@@ -46,14 +46,23 @@
 
 	'use strict';
 
-	var React = __webpack_require__(1);
-	var ReactDOM = __webpack_require__(32);
+	var _react = __webpack_require__(1);
 
-	var Main = React.createClass({
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// var React = require('react');
+	// var ReactDOM = require('react-dom');
+	var Main = _react2.default.createClass({
 	    displayName: 'Main',
 
 	    render: function render() {
-	        return React.createElement(
+	        return _react2.default.createElement(
 	            'div',
 	            null,
 	            'Hello World'
@@ -61,7 +70,13 @@
 	    }
 	});
 
-	ReactDOM.render(React.createElement(Main, null), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(Main, null), document.getElementById('app'));
+
+	_reactDom2.default.render(_react2.default.createElement(
+	    'h1',
+	    null,
+	    'Hello, world!'
+	), document.getElementById('root'));
 
 /***/ },
 /* 1 */
